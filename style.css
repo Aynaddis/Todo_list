@@ -1,0 +1,124 @@
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root{
+    --color-main:#021c1e;
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-cadetblue:#004445;
+    --color-rain:#2c7873;
+    --color-greenery:#6fb98f;
+    --color-strawberry:#cb0000;
+    --color-raspberry:#ed5752;
+    --color-sage:#a1be95;
+
+
+
+}
+
+.container {
+    background: #a1be95; ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(82, 48, 48, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    background-color: #021c1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addTaskBtn:hover {
+    background-color: #2c7873;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background-color: #cb0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #ed5752;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #taskInput {
+        font-size: 14px;
+    }
+
+    #addTaskBtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}
